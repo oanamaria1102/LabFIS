@@ -15,10 +15,10 @@ public class Main {
 
         String[] xmlList = new String[6];
         xmlList[0] = "<tag1>";
-        xmlList[1] = "text1";
+        xmlList[1] = "blabla";
         xmlList[2] = "</tag1>";
         xmlList[3] = "<tag2>";
-        xmlList[4] = "text2";
+        xmlList[4] = "ola";
         xmlList[5] = "</tag2>";
 
         Document xml = new XML(xmlList);
@@ -26,9 +26,9 @@ public class Main {
         ArrayList<Document> documente = new ArrayList<>();
         documente.add(xml);
 
-        Procesor c1 = new ProcesorCautare("text1");
-        Procesor c2 = new ProcesorCautare("text3");
-        Procesor c3 = new ProcesorCautare("text2");
+        Procesor c1 = new ProcesorCautare("lalala");
+        Procesor c2 = new ProcesorCautare("blabla");
+        Procesor c3 = new ProcesorCautare("ola");
 
         ProcesorCompus pc1 = new ProcesorCompus();
         pc1.adaugaProcesor(c1);
